@@ -1,0 +1,22 @@
+# https://school.programmers.co.kr/learn/courses/30/lessons/181901
+
+# testcase 1
+n = 10
+k = 3 # [3, 6, 9]
+
+# testcase 2
+# n = 15
+# k = 5  # [5, 10, 15]
+
+
+def solution(n, k):
+    answer = []
+    for i in range(1, 1000001):
+        if (k * i) <= n:
+            answer.append(k * i)
+        else:
+            break
+    return answer
+
+
+print(solution(n, k))
